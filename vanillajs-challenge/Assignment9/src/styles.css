@@ -1,0 +1,51 @@
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+  font-size: 40px;
+  opacity: 0.9;
+  width: 1000px;
+}
+div {
+  width: 1000px;
+  height: 120px;
+}
+span {
+  width: 660px;
+  height: 120px;
+  padding-right: 30px;
+  margin: 0px;
+  display: inline-block;
+  text-align: right;
+}
+
+button {
+  border: none;
+  width: 200px;
+  height: 100px;
+  color: white;
+  padding: 0;
+  font-size: 40px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+button:active {
+  opacity: 0.8;
+}
+
+.gray {
+  background-color: #95a5a6;
+}
+
+.dark {
+  background-color: #2d3436;
+}
+
+.orange {
+  background-color: #e67e22;
+}
+
+.zero {
+  width: 435px;
+}
