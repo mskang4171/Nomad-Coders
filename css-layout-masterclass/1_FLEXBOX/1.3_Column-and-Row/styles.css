@@ -1,0 +1,16 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  /* Main Axis : Vertical */
+  justify-content: space-around;
+  /* Cross Axis : Horizontal */
+  align-items: flex-end;
+  height: 100vh;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  background: peru;
+  color: white;
+}
