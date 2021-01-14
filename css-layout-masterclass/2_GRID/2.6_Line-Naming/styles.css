@@ -1,0 +1,24 @@
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: [first-line] 100px [second-line] 100px [third-line] 100px [fourth-line] 100px [fifth-line];
+  grid-template-rows: repeat(4, 100px [row-line]);
+}
+
+.header {
+  background-color: #2ecc71;
+  grid-column: span 4;
+}
+.content {
+  background-color: #3498db;
+  grid-column: first-line / fourth-line;
+  grid-row: row-line 1 / row-line 3;
+}
+.nav {
+  background-color: #8e44ad;
+  grid-row: span 2;
+}
+.footer {
+  background-color: #f39c12;
+  grid-column: span 4;
+}
