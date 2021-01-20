@@ -1,0 +1,131 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #f1c40f;
+  font-size: 1.4vw;
+}
+
+.wrapper {
+  height: 98vh;
+  margin: 1vh;
+  display: grid;
+  grid-template-columns: 1fr 20fr 20fr 1fr;
+  grid-template-rows: 1fr 10fr 8fr 2fr 1fr;
+  border: solid #e67e22;
+}
+
+.top {
+  grid-column: 1 / -1;
+  grid-row: 1;
+  border-bottom: solid #e67e22;
+  color: #e67e22;
+}
+
+.leftone {
+  grid-column: 1;
+  grid-row: 2;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-bottom: solid #e67e22;
+  border-right: solid #e67e22;
+  background-color: #e67e22;
+  color: white;
+  font-weight: bold;
+  font-size: 1vh;
+  overflow: hidden;
+}
+
+.left {
+  grid-column: 2;
+  grid-row: 2 / 5;
+  background-image: url("./images/1.jpg");
+  background-size: cover;
+}
+
+.right {
+  grid-column: 3;
+  grid-row: 2 / 5;
+  background-image: url("./images/2.jpg");
+  background-size: cover;
+}
+
+.rightone {
+  grid-column: 4;
+  grid-row: 2;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-bottom: solid #e67e22;
+  border-left: solid #e67e22;
+  font-size: 1vh;
+}
+
+.lefttwo {
+  grid-column: 1;
+  grid-row: 3;
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  border-top: solid #e67e22;
+  border-left: solid #e67e22;
+}
+
+.righttwo {
+  grid-column: 4;
+  grid-row: 3 / 5;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  border-left: solid #e67e22;
+  font-size: 1vh;
+}
+
+.leftthree {
+  grid-column: 1;
+  grid-row: 4;
+  border-right: solid #e67e22;
+}
+
+.bottom {
+  grid-column: 1 / -1;
+  grid-row: 5;
+  border-top: solid #e67e22;
+}
+
+.main {
+  position: absolute;
+  left: 50%;
+  top: 50vh;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 800;
+  text-align: center;
+  font-size: 8vw;
+}
+
+.whiteback {
+  background-color: white;
+  color: #e67e22;
+  font-weight: bold;
+}
+
+.greenback {
+  background-color: #27ae60;
+  color: white;
+  font-weight: bold;
+}
+
+.wrapper > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper > div:nth-child(8) {
+  flex-direction: column;
+}
+
+img {
+  margin: 1px;
+}
